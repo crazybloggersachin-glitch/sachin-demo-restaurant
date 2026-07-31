@@ -3,54 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sachin Demo Restaurant</title>
+
+<title>Sachin Web Developer | Website Designer in Fatehpur</title>
+
+<meta name="description" content="Sachin Web Developer - Professional website designer from Fatehpur. Restaurant, shop, business and portfolio websites available.">
+
 <style>
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial,sans-serif;
 background:#0f172a;
 color:white;
 }
+
 header{
 background:#111827;
-padding:15px;
-text-align:center;
-font-size:28px;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:24px;
 font-weight:bold;
 color:#f59e0b;
 }
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+}
+
 .hero{
-background:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1600&auto=format&fit=crop') center/cover;
 padding:80px 20px;
 text-align:center;
+background:linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.9)),
+url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop') center/cover;
 }
+
 .hero h1{
 font-size:42px;
 margin-bottom:10px;
 }
+
 .hero p{
 font-size:18px;
-margin-bottom:20px;
+max-width:700px;
+margin:auto;
+line-height:1.6;
 }
+
 .btn{
 display:inline-block;
 padding:14px 24px;
-margin:10px;
+margin:12px 8px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 color:white;
 }
+
 .whatsapp{background:#25D366;}
 .call{background:#2563eb;}
 
-.menu{
-padding:40px 20px;
+.section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
 }
-.menu h2{
+
+.section h2{
 text-align:center;
 color:#f59e0b;
 margin-bottom:30px;
+font-size:34px;
 }
 
 .grid{
@@ -61,114 +91,108 @@ gap:20px;
 
 .card{
 background:#1e293b;
-border-radius:20px;
-overflow:hidden;
+padding:25px;
+border-radius:18px;
 box-shadow:0 8px 20px rgba(0,0,0,.3);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
-
-.card-content{
-padding:15px;
-text-align:center;
 }
 
 .card h3{
-margin:10px 0;
-}
-
-.price{
-font-size:24px;
-font-weight:bold;
+margin-top:0;
 color:#f59e0b;
-margin:10px 0;
-}
-
-.order{
-display:inline-block;
-background:#16a34a;
-color:white;
-padding:10px 20px;
-border-radius:25px;
-text-decoration:none;
-font-weight:bold;
 }
 
 footer{
 background:#111827;
 text-align:center;
-padding:20px;
+padding:25px;
 margin-top:40px;
 color:#cbd5e1;
 }
 </style>
 </head>
+
 <body>
 
-<header>☕ SACHIN DEMO RESTAURANT</header>
+<header>
+<div class="logo">Sachin Web Developer</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
 <section class="hero">
-<h1>Premium Tea & Fast Food</h1>
-<p>Delicious food, beautiful design, and easy ordering</p>
-<a class="btn whatsapp" href="#">WhatsApp</a>
-<a class="btn call" href="#">Call Now</a>
+
+<h1>Professional Website Developer</h1>
+
+<p>
+मैं व्यवसाय, दुकान, रेस्टोरेंट, स्कूल और व्यक्तिगत उपयोग के लिए
+आधुनिक और मोबाइल-फ्रेंडली वेबसाइट बनाता हूँ।
+</p>
+
+<a class="btn whatsapp" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+
+<a class="btn call" href="tel:+91XXXXXXXXXX">Call Now</a>
+
 </section>
 
-<section class="menu">
-<h2>🍽️ Our Menu</h2>
+<section class="section" id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+नमस्ते, मेरा नाम <b>सचिन यादव</b> है।
+मैं Fatehpur, Uttar Pradesh से हूँ और आधुनिक वेबसाइट बनाना सीख रहा हूँ।
+मैं छोटे व्यवसायों और दुकानों के लिए सुंदर और उपयोगी वेबसाइट तैयार करता हूँ।
+</p>
+</div>
+</section>
+
+<section class="section" id="services">
+
+<h2>My Services</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Special Tea</h3>
-<div class="price">₹10</div>
-<a class="order" href="#">Order</a>
-</div>
+<h3>Restaurant Website</h3>
+<p>Menu, photos, WhatsApp order and contact buttons.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Cheese Burger</h3>
-<div class="price">₹50</div>
-<a class="order" href="#">Order</a>
-</div>
+<h3>Shop Website</h3>
+<p>Products, prices and customer contact options.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Paneer Pizza</h3>
-<div class="price">₹149</div>
-<a class="order" href="#">Order</a>
-</div>
+<h3>School Website</h3>
+<p>Information, gallery and admission details.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=1200&auto=format&fit=crop">
-<div class="card-content">
-<h3>Paneer Noodles</h3>
-<div class="price">₹40</div>
-<a class="order" href="#">Order</a>
-</div>
+<h3>Portfolio Website</h3>
+<p>Personal brand and professional online identity.</p>
 </div>
 
 </div>
 </section>
 
+<section class="section" id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+<p><b>WhatsApp:</b> +91 XXXXXXXXXX</p>
+<p><b>Call:</b> +91 XXXXXXXXXX</p>
+<p><b>Location:</b> Fatehpur, Uttar Pradesh</p>
+</div>
+
+</section>
+
 <footer>
-© 2026 Sachin Demo Restaurant | Premium Template
+© 2026 Sachin Web Developer | All Rights Reserved
 </footer>
 
 </body>
